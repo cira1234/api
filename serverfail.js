@@ -1,7 +1,17 @@
-app.get('/userser',function(req,res,next){
-    console.log("HI");
-        }
-    )
-    app.listen(5000,function(){
+
+var express = require('express')
+var cors =require('cors')
+var app=express()
+
+
+
+
+app.use(cors())
+
+app.get('/products',function(req,res,next){
+    res.json({msg:'api connected!'})
+})
+
+app.listen(5000,function(){
     console.log('enable port 5000')
 })
