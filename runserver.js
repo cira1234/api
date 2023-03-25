@@ -4,12 +4,13 @@ const mysql = require('mysql2');
 const { query } = require('express');
 
 
+
 const connection =mysql.createConnection({
 
     host: "localhost",
-    user: "root",
-    password: "",
-    database: "member"
+    user: "id18503464_chokanan",
+    password: "<v8@a%Q58Q2d@h&J",
+    database: "id18503464_dataapplication"
 });
 
 const app=express()
