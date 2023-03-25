@@ -83,7 +83,7 @@ app.get('/getid',function(req,res,next){
 app.get('/select',function(req,res,next){
     connection.query(
 
-        'select * from employee',
+        'SELECT * FROM `employee` ',
         function(err,result,field){
             res.json(result);
             console.log(result);
